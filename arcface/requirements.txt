@@ -1,7 +1,9 @@
 streamlit
 deepface
 scikit-learn
-opencv-python-headless
+opencv-python-headless==4.8.1.78
 numpy
 joblib
 Pillow
+tensorflow==2.15.0
+keras==2.15.0
