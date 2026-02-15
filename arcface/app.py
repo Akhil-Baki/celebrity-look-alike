@@ -7,7 +7,7 @@ from PIL import Image
 
 embeddings_db = joblib.load("embeddings.pkl")
 names_db = joblib.load("names.pkl")
-image_db = joblib.load("image_db.pkl")
+
 
 # Page config
 st.set_page_config(page_title="Which Celebrity Are You?", layout="centered")
@@ -24,7 +24,8 @@ def find_match(query_embedding, threshold=0.4):
     best_index = np.argmax(similarities)
     best_score = similarities[best_index]
     best_name = names_db[best_index]
-    best_image = image_db[best_index]
+    matched_path = image_paths[best_index]
+    matched_image = Image.open(matched_path)
 
     if best_score >= threshold:
         return best_name, best_score, best_image
@@ -60,3 +61,4 @@ if uploaded_file is not None:
 
     with col1:
         st.image(celeb_image, caption=name, width=250)
+
