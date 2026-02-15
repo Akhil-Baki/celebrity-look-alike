@@ -1,9 +1,10 @@
-
 streamlit
-deepface
+deepface==0.0.79
+tensorflow-cpu==2.15.0
+keras==2.15.0
+opencv-python-headless==4.8.1.78
+retina-face==0.0.13
 scikit-learn
-opencv-python
-numpy
+numpy==1.23.5
 joblib
 Pillow
-
