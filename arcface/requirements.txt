@@ -1,0 +1,7 @@
+streamlit
+deepface
+scikit-learn
+opencv-python
+numpy
+joblib
+Pillow
