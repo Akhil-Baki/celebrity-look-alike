@@ -1,7 +1,7 @@
 streamlit
 deepface
 scikit-learn
-opencv-python
+opencv-python-headless
 numpy
 joblib
 Pillow
